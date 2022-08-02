@@ -8,7 +8,13 @@ import * as styles from "../components/index.module.css"
 const IndexPage = () => (
     <Layout>
         <Seo title="Home"/>
-        <div className={styles.textCenter} style={{display: "flex", justifyContent: "center"}}>
+        <div className={styles.textCenter} style={{
+            display: "flex",
+            justifyContent: "center",
+            background: "#e6f1ff",
+            padding: "1rem",
+            borderRadius: "1rem"
+        }}>
             <StaticImage
                 src="../images/portrait-animated.png"
                 loading="eager"

@@ -24,7 +24,7 @@ const Layout = ({children}) => {
   `)
 
     return (
-        <div style={{background: `#eff1fd`}}>
+        <div style={{background: `#eff6ff`}}>
             <Header/>
             <div
                 style={{
