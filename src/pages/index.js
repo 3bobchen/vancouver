@@ -22,12 +22,15 @@ const IndexPage = () => (
                 quality={100}
                 formats={["auto", "webp", "avif"]}
                 alt=""
+                id="profile-photo"
                 style={{
-                    marginBottom: `var(--space-3)`,
+                    display: "block",
                     flex: 1,
                     marginLeft: "auto",
                     marginRight: "auto",
-                    maxWidth: "20rem"
+                    maxWidth: "20rem",
+                    marginTop: "auto",
+                    marginBottom: "auto"
                 }}
             />
             <div style={{
