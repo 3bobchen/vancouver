@@ -22,7 +22,13 @@ const IndexPage = () => (
                 quality={100}
                 formats={["auto", "webp", "avif"]}
                 alt=""
-                style={{marginBottom: `var(--space-3)`, flex: 1, marginLeft: "10vw", marginRight: "5vw"}}
+                style={{
+                    marginBottom: `var(--space-3)`,
+                    flex: 1,
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                    maxWidth: "20rem"
+                }}
             />
             <div style={{
                 display: "flex",
