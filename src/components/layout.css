@@ -1,4 +1,5 @@
 @import "./typography.css";
+@import "./header.css";
 
 :root {
   --border-radius: 4px;
@@ -231,4 +232,13 @@ pre tt:after {
   font-family: "Roslindale", serif;
   font-weight: normal;
   font-size: 4rem;
+}
+
+.small {
+  font-size: 2rem;
+}
+
+.title {
+  font-size: 6rem;
+  color: #111;
 }
