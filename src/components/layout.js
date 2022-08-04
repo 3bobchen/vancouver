@@ -30,7 +30,7 @@ const Layout = ({children}) => {
                 style={{
                     margin: `0 auto`,
                     padding: `var(--size-gutter)`,
-                    height: "220vh"
+                    height: "210vh"
                 }}
             >
                 <main>{children}</main>
