@@ -10,6 +10,8 @@ const Header = () => (
             display: `flex`,
             alignItems: `center`,
             justifyContent: `space-between`,
+            position: "fixed",
+            zIndex: 2
         }}
     >
         <span className={"logo small"}>
@@ -46,6 +48,20 @@ const Header = () => (
                 <p style={{marginBottom: "1vh", marginTop: 0}}>Trailer Animations</p>
                 <p style={{marginBottom: 0, marginTop: "1vh"}}>Video</p>
                 <p style={{marginBottom: 0, marginTop: "1vh"}}>Logos</p>
+            </div>
+        </div>
+        <div className="dropdown">
+            <Link
+                to="/"
+                style={{
+                    fontSize: `var(--font-lg)`,
+                    textDecoration: `none`,
+                }}
+            >
+                <strong>Files</strong>
+            </Link>
+            <div className="dropdown-content">
+                <p style={{marginBottom: 0, marginTop: 0}}>PDF Resume</p>
             </div>
         </div>
         <Link
