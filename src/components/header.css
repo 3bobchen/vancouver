@@ -18,3 +18,10 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+@media (max-width: 740px) {
+    header {
+        flex-direction: column;
+        gap: 1.3rem;
+    }
+}

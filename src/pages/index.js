@@ -22,7 +22,7 @@ const IndexPage = () => (
             style={{
               marginLeft: "auto",
               marginRight: "auto",
-              maxWidth: "15rem",
+              maxWidth: "17rem",
               marginTop: "auto",
               marginBottom: "auto"
             }}
@@ -46,7 +46,14 @@ const IndexPage = () => (
         </div>
 
         <div className={styles.greeting}>
-          <div style={{ display: "flex", fontSize: "4rem", fontWeight: 150, color: "#004ca3" }}>
+          <div style={{
+            display: "flex",
+            fontSize: "2rem",
+            textDecoration: "underline",
+            color: "#004ca3",
+            fontWeight: 500,
+            margin: "1rem"
+          }}>
             {new Date().getHours() < 2 ? <span
               style={{ width: "available" }}>Hi there, you're up late!</span> : new Date().getHours() < 6 ?
               <span>Hi there, you're up early!</span> : new Date().getHours() < 12 ?
@@ -54,8 +61,15 @@ const IndexPage = () => (
                   <span>Good Evening</span>
             }
           </div>
-          <h1 style={{ display: "flex", fontSize: "1.6rem", color: "#004ca3", padding: "0 5vw" }}>
-            Based in Sydney, I am a double major uni student interested in a broad range
+          <h1 style={{
+            display: "flex",
+            fontSize: "1.6rem",
+            color: "#004ca3",
+            padding: "0 5vw",
+            width: "75%",
+            fontWeight: 400
+          }}>
+            Based in Sydney, I am a double-major uni student with experience and knowledge in a broad range
             of disciplines. <br /><br /> I hope you can follow this showcase and get to know me and my work
             better.
           </h1>
