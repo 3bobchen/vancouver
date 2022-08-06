@@ -38,17 +38,57 @@
   font-weight: bold;
 }
 
-.listItemDescription {
-  color: var(--color-text);
-  margin-bottom: 0;
-  margin-top: var(--space-1);
-}
-
 .textCenter {
   text-align: center;
 }
 
-.intro {
-  max-width: none;
-  line-height: var(--line-height-loose);
+@media (min-width: 1165px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1165px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .persona {
+    gap: 3rem
+  }
+}
+
+@media (max-width: 1300px) {
+  .persona {
+    flex-direction: column;
+  }
+}
+
+.persona {
+  text-align: center;
+  display: flex;
+  justifyContent: center;
+  padding: 1rem;
+  borderRadius: 1rem;
+  flex: 1.3;
+}
+
+.greeting {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #e6f1ff;
+  border-radius: 2rem;
+  flex: 1;
 }

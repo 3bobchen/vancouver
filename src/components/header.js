@@ -9,9 +9,7 @@ const Header = () => (
             padding: `var(--space-4) var(--size-gutter)`,
             display: `flex`,
             alignItems: `center`,
-            justifyContent: `space-between`,
-            position: "fixed",
-            zIndex: 2
+            justifyContent: `space-between`
         }}
     >
         <span className={"logo small"}>
