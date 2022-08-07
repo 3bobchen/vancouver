@@ -76,9 +76,7 @@ const IndexPage = () => (
         </div>
       </div>
 
-      {
-        Actions()
-      }
+      <Actions></Actions>
 
       {/*<div style={{*/}
       {/*  display: "flex",*/}
