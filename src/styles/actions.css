@@ -1,0 +1,15 @@
+@media (max-width: 800px) {
+    .actionRow {
+        display: flex;
+        flex-direction: column;
+        color: #004ca3;
+    }
+}
+
+@media (min-width: 800px) {
+    .actionRow {
+        display: flex;
+        flex-direction: row;
+        color: #004ca3;
+    }
+}
