@@ -51,11 +51,11 @@ const IndexPage = () => (
             display: "flex",
             fontSize: "2rem",
             color: "#004ca3",
-            fontWeight: 500,
-            margin: "1rem"
+            fontWeight: 600,
+            justifyContent: "flex-start"
           }}>
             {new Date().getHours() < 2 ? <span
-              style={{ width: "available" }}>Hi there, you're up late!</span> : new Date().getHours() < 6 ?
+              style={{}}>Hi there, you're up late!</span> : new Date().getHours() < 6 ?
               <span>Hi there, you're up early!</span> : new Date().getHours() < 12 ?
                 <span>Good Morning!</span> : new Date().getHours() < 17 ? <span> Good Afternoon!</span> :
                   <span>Good Evening!</span>
@@ -65,9 +65,7 @@ const IndexPage = () => (
             display: "flex",
             fontSize: "1.6rem",
             color: "#004ca3",
-            padding: "0 5vw",
-            width: "75%",
-            fontWeight: 400
+            fontWeight: 300
           }}>
             Based in Sydney, I am a double-major uni student with experience and knowledge in a broad range
             of disciplines. <br /><br /> I hope you can follow this showcase and get to know me and my work

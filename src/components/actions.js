@@ -4,12 +4,12 @@ import styles from "../styles/actions.css";
 const Actions = () => {
   return (
     <span
-      style={{ maxWidth: "1300px", marginLeft: "auto", marginRight: "auto", marginBottom: "4rem", marginTop: "2rem" }}>
+      style={{ maxWidth: "1200px", marginLeft: "auto", marginRight: "auto", marginBottom: "4rem" }}>
       <div style={{
         display: "flex",
         flexDirection: "column",
         background: "white",
-        width: "75%",
+        width: "80%",
         marginLeft: "auto",
         marginRight: "auto",
         borderRadius: "1rem",
