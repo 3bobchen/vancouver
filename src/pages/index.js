@@ -65,6 +65,7 @@ const IndexPage = () => (
             display: "flex",
             fontSize: "1.6rem",
             color: "#004ca3",
+            width: "90%",
             fontWeight: 300
           }}>
             Based in Sydney, I am a double-major uni student with experience and knowledge in a broad range
