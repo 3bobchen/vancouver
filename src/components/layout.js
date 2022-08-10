@@ -68,18 +68,18 @@ const Layout = ({ children }) => {
 
       <div className={"FooterRow"}>
         <div className={"FooterShortcuts"}>
-          <span>
-              <b>Home</b>
-          </span>
-          <span>
-              <b>Experience</b>
-          </span>
-          <span>
-              <b>Portfolio</b>
-          </span>
-          <span>
-              <b>Contact</b>
-          </span>
+          {/*<span>*/}
+          {/*    <b>Home</b>*/}
+          {/*</span>*/}
+          {/*<span>*/}
+          {/*    <b>Experience</b>*/}
+          {/*</span>*/}
+          {/*<span>*/}
+          {/*    <b>Portfolio</b>*/}
+          {/*</span>*/}
+          {/*<span>*/}
+          {/*    <b>Contact</b>*/}
+          {/*</span>*/}
         </div>
         <span style={{
           display: "flex", flexDirection: "row", alignItems: "center"
