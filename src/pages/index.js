@@ -69,7 +69,7 @@ const IndexPage = () => (
             fontWeight: 300
           }}>
             Based in Sydney, I am a double-major uni student with experience and knowledge in a broad range
-            of disciplines. <br /><br /> Follow this showcase and get to know me and my work
+            of disciplines. <br /><br /> Follow this showcase and get to know my work
             better!
           </h1>
         </div>

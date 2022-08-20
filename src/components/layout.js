@@ -19,16 +19,16 @@ const Layout = ({ children }) => {
         margin: `0 auto`, padding: `var(--size-gutter)`
       }}
     >
-      <main>{children}</main>
+      <main style={{ minHeight: "70vh" }}>{children}</main>
     </div>
 
     <footer
       className={"Footer"}>
       <div className={"FooterRow"}>
         <div>
-          <span className={"logo"}>
-              BC
-          </span>
+          <a href={"/"} className={"logo"}>
+            BC
+          </a>
         </div>
         <span style={{
           display: "flex", flexDirection: "row", alignItems: "center"
