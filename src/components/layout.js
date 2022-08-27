@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
       className={"Footer"}>
       <div className={"FooterRow"}>
         <div>
-          <a href={"/"} className={"logo"}>
+          <a href={"./"} className={"logo"}>
             BC
           </a>
         </div>

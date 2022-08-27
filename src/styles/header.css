@@ -12,7 +12,6 @@
     padding: 12px 12px;
     z-index: 1;
     border-radius: 12px;
-    margin-top: 4px;
 }
 
 .dropdown:hover .dropdown-content {
