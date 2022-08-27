@@ -32,15 +32,15 @@ const Header = () => (
       </div>
     </div>
     <div className="dropdown">
-      <Link
-        to="/creative/cprojects"
+      <a
+        href={"./creative/cprojects"}
         style={{
           fontSize: `var(--font-lg)`,
           textDecoration: `none`
         }}
       >
         <strong>Creative Portfolio</strong>
-      </Link>
+      </a>
       <div className="dropdown-content">
         <a href={"./creative/creativeCoding"}><p style={{ marginBottom: "1vh", marginTop: 0 }}>Creative Coding</p>
         </a>
@@ -64,8 +64,8 @@ const Header = () => (
           <p style={{ marginBottom: 0, marginTop: 0 }}>PDF Resume</p></a>
       </div>
     </div>
-    <Link
-      to="./contact"
+    <a
+      href={"./contact"}
       style={{
         fontSize: `var(--font-lg)`,
         textDecoration: `none`,
@@ -76,7 +76,7 @@ const Header = () => (
       }}
     >
       Contact
-    </Link>
+    </a>
 
   </header>
 );
