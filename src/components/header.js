@@ -13,7 +13,7 @@ const Header = () => (
     }}
   >
 
-    <a href={"/"} className={"logo small"}>BC</a>
+    <a href={"./"} className={"logo small"}>BC</a>
     <div className="dropdown">
       <Link
         style={{
@@ -24,10 +24,11 @@ const Header = () => (
         <strong>Professional Portfolio</strong>
       </Link>
       <div className="dropdown-content">
-        <a href={"/professional/education"}><p style={{ marginBottom: "1vh", marginTop: 0 }}>Education</p></a>
-        <a href={"/professional/experience"}><p style={{ marginBottom: "1vh", marginTop: 0 }}>Experience</p></a>
-        <a href={"/professional/skills"}><p style={{ marginBottom: 0, marginTop: "1vh" }}>Skills</p></a>
-        <a href={"/professional/tprojects"}><p style={{ marginBottom: 0, marginTop: "1vh" }}> Technical Projects</p></a>
+        <a href={"./professional/education"}><p style={{ marginBottom: "1vh", marginTop: 0 }}>Education</p></a>
+        <a href={"/gaea/professional/experience"}><p style={{ marginBottom: "1vh", marginTop: 0 }}>Experience</p></a>
+        <a href={"/gaea/professional/skills"}><p style={{ marginBottom: 0, marginTop: "1vh" }}>Skills</p></a>
+        <a href={"/gaea/professional/tprojects"}><p style={{ marginBottom: 0, marginTop: "1vh" }}> Technical
+          Projects</p></a>
       </div>
     </div>
     <div className="dropdown">
@@ -41,10 +42,11 @@ const Header = () => (
         <strong>Creative Portfolio</strong>
       </Link>
       <div className="dropdown-content">
-        <a href={"/creative/creativeCoding"}><p style={{ marginBottom: "1vh", marginTop: 0 }}>Creative Coding</p></a>
-        <a href={"/creative/logos"}><p style={{ marginBottom: "1vh", marginTop: "1vh" }}>Logos</p></a>
-        <a href={"/creative/trailers"}><p style={{ marginBottom: "1vh", marginTop: 0 }}>Trailer Animations</p></a>
-        <a href={"/creative/videos"}><p style={{ marginBottom: 0, marginTop: "1vh" }}>Video</p></a>
+        <a href={"/gaea/creative/creativeCoding"}><p style={{ marginBottom: "1vh", marginTop: 0 }}>Creative Coding</p>
+        </a>
+        <a href={"/gaea/creative/logos"}><p style={{ marginBottom: "1vh", marginTop: "1vh" }}>Logos</p></a>
+        <a href={"/gaea/creative/trailers"}><p style={{ marginBottom: "1vh", marginTop: 0 }}>Trailer Animations</p></a>
+        <a href={"/gaea/creative/videos"}><p style={{ marginBottom: 0, marginTop: "1vh" }}>Video</p></a>
       </div>
     </div>
     <div className="dropdown">
@@ -63,7 +65,7 @@ const Header = () => (
       </div>
     </div>
     <Link
-      to="/contact"
+      to="/gaea/contact"
       style={{
         fontSize: `var(--font-lg)`,
         textDecoration: `none`,

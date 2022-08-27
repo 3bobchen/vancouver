@@ -49,13 +49,22 @@
   margin-right: auto;
 }
 
-@media (min-width: 1300px) {
+.container {
+  scroll-snap-type: y mandatory;
+  scroll-snap-points-y: repeat 3rem;
+}
+
+.child {
+  scroll-snap-align: start;
+}
+
+@media (min-width: 1000px) {
   .persona {
     gap: 2rem
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
   .persona {
     flex-direction: column;
     gap: 2rem
@@ -79,7 +88,6 @@
   flex-direction: column;
   justify-content: flex-start;
   flex: 1;
-  max-width: 1300px;
-  width: 80%;
-  margin: 3rem auto 1rem;
+  max-width: 950px;
+  margin: auto auto;
 }

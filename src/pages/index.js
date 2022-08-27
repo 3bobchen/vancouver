@@ -9,8 +9,8 @@ import Actions from "../components/actions";
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <div style={{ display: "flex", flexDirection: "column" }}>
-      <div className={styles.hero}>
+    <div className={styles.container} style={{ display: "flex", flexDirection: "column" }}>
+      <div className={`${styles.hero} ${styles.child}`}>
         <div className={styles.persona}>
           <StaticImage
             src="../images/portrait-animated.png"
@@ -69,13 +69,16 @@ const IndexPage = () => (
             fontWeight: 300
           }}>
             Based in Sydney, I am a double-major uni student with experience and knowledge in a broad range
-            of disciplines. <br /><br /> Follow this showcase and get to know my work
-            better!
+            of disciplines. <br /><br /> Browse through and get to know my work
+            better.
           </h1>
         </div>
       </div>
 
-      <Actions></Actions>
+      <div className={styles.child}>
+        <Actions></Actions>
+      </div>
+
 
       {/*<div style={{*/}
       {/*  display: "flex",*/}
