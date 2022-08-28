@@ -12,27 +12,28 @@ import Header from "./header";
 import "../styles/layout.css";
 
 const Layout = ({ children }) => {
-  return (<div style={{ background: `#eff6ff` }}>
-    <Header />
-    <div
-      style={{
-        margin: `0 auto`, padding: `var(--size-gutter)`
-      }}
-    >
-      <main style={{ minHeight: "70vh" }}>{children}</main>
-    </div>
+  return (
+    <div className={"background"}>
+      <Header />
+      <div
+        style={{
+          margin: `0 auto`, padding: `var(--size-gutter)`
+        }}
+      >
+        <main style={{ minHeight: "70vh" }}>{children}</main>
+      </div>
 
-    <footer
-      className={"Footer"}>
-      <div className={"FooterRow"}>
-        <div>
-          <a href={"./"} className={"logo"}>
-            BC
-          </a>
-        </div>
-        <span style={{
-          display: "flex", flexDirection: "row", alignItems: "center"
-        }}>
+      <footer
+        className={"Footer"}>
+        <div className={"FooterRow"}>
+          <div>
+            <a href={"./"} className={"logo"}>
+              BC
+            </a>
+          </div>
+          <span style={{
+            display: "flex", flexDirection: "row", alignItems: "center"
+          }}>
           <span style={{ display: "flex", gap: "2vw" }}>
             <a href={"mailto:main.bobchen@gmail.com"}>
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
@@ -64,33 +65,33 @@ const Layout = ({ children }) => {
             </a>
           </span>
       </span>
-      </div>
-
-      <div className={"FooterRow"}>
-        <div className={"FooterShortcuts"}>
-          {/*<span>*/}
-          {/*    <b>Home</b>*/}
-          {/*</span>*/}
-          {/*<span>*/}
-          {/*    <b>Experience</b>*/}
-          {/*</span>*/}
-          {/*<span>*/}
-          {/*    <b>Portfolio</b>*/}
-          {/*</span>*/}
-          {/*<span>*/}
-          {/*    <b>Contact</b>*/}
-          {/*</span>*/}
         </div>
-        <span style={{
-          display: "flex", flexDirection: "row", alignItems: "center"
-        }}>
+
+        <div className={"FooterRow"}>
+          <div className={"FooterShortcuts"}>
+            {/*<span>*/}
+            {/*    <b>Home</b>*/}
+            {/*</span>*/}
+            {/*<span>*/}
+            {/*    <b>Experience</b>*/}
+            {/*</span>*/}
+            {/*<span>*/}
+            {/*    <b>Portfolio</b>*/}
+            {/*</span>*/}
+            {/*<span>*/}
+            {/*    <b>Contact</b>*/}
+            {/*</span>*/}
+          </div>
+          <span style={{
+            display: "flex", flexDirection: "row", alignItems: "center"
+          }}>
             <b>
                 © {new Date().getFullYear()} (Bob Chen)
             </b>
         </span>
-      </div>
-    </footer>
-  </div>);
+        </div>
+      </footer>
+    </div>);
 };
 
 Layout.propTypes = {

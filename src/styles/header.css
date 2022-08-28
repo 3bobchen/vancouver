@@ -24,3 +24,47 @@
         gap: 1.3rem;
     }
 }
+
+.background {
+    background: #eff6ff;
+    /*        linear-gradient(0deg, #d3f3ff, #FFFFFF, #E7F1E8, #eff6ff);*/
+    /*background-size: 1000% 1000%;*/
+
+    /*-webkit-animation: background-gradients 15s ease infinite;*/
+    /*-moz-animation: background-gradients 15s ease infinite;*/
+    /*animation: background-gradients 15s ease infinite;*/
+}
+
+/*@-webkit-keyframes background-gradients {*/
+/*    0%{background-position:0% 34%}*/
+/*    50%{background-position:100% 67%}*/
+/*    100%{background-position:0% 34%}*/
+/*}*/
+/*@-moz-keyframes background-gradients {*/
+/*    0%{background-position:0% 34%}*/
+/*    50%{background-position:100% 67%}*/
+/*    100%{background-position:0% 34%}*/
+/*}*/
+/*@keyframes background-gradients {*/
+/*    0%{background-position:0% 34%}*/
+/*    50%{background-position:100% 67%}*/
+/*    100%{background-position:0% 34%}*/
+/*}*/
+
+/*@keyframes backgroundColorPalette {*/
+/*    0% {*/
+/*        background: linear-gradient(120deg, #DAE9F8, #EAC8EA);*/
+/*    }*/
+/*    25% {*/
+/*        background: #d6fdff;*/
+/*    }*/
+/*    50% {*/
+/*        background: #d6fffa;*/
+/*    }*/
+/*    75% {*/
+/*        background: #FFFFFF;*/
+/*    }*/
+/*    100% {*/
+/*        background: #eff6ff;*/
+/*    }*/
+/*}*/
