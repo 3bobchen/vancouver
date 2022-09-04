@@ -284,7 +284,7 @@ Header {
 @media (min-width: 740px) {
   .FooterRow {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-right: 5vw;
     margin-left: 5vw;
   }
