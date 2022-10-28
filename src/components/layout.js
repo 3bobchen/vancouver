@@ -31,6 +31,7 @@ const Layout = ({ children }) => {
               BC
             </a>
           </div>
+          <span></span>
           {/*<span style={{*/}
           {/*  display: "flex", flexDirection: "row", alignItems: "center"*/}
           {/*}}>*/}
