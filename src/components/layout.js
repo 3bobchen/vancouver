@@ -87,7 +87,7 @@ const Layout = ({ children }) => {
             display: "flex", flexDirection: "row", alignItems: "center"
           }}>
             <b>
-                © {new Date().getFullYear()} (Bob Chen)
+                © {new Date().getFullYear()} Bob Chen
             </b>
         </span>
         </div>
