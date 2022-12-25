@@ -13,7 +13,7 @@ const Header = () => (
     }}
   >
 
-    <a href={"./"} className={"logo small"}>BC</a>
+    <a href={"/"} className={"logo small"}>BC</a>
     <div className="dropdown">
       <Link
         style={{
