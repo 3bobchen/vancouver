@@ -60,7 +60,7 @@ const Header = () => (
       </Link>
       <div className="dropdown-content">
         <a
-          href={"https://docs.google.com/document/d/11VVcKdyn9elcOqCIAMaQl0jnq_KifBbL/edit?usp=sharing&ouid=103019584399212885877&rtpof=true&sd=true"}>
+          href={"https://drive.google.com/file/d/10hwwA7xFzkZtDQC70Lt5wD9cGJ1qS9tn/view?usp=share_link"}>
           <p style={{ marginBottom: 0, marginTop: 0 }}>PDF Resume</p></a>
       </div>
     </div>
