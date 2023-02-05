@@ -68,7 +68,7 @@ const IndexPage = () => (
             width: "90%",
             fontWeight: 300
           }}>
-            Welcome to my profile. Currently an undergraduate student, I am an aspiring developer and generalist with wide ranging interests. I am widely travelled and have a strong interest in social theory, hoping to efficiently and pragmatically create positive impacts wherever I work. <br /><br /> Find my overview below.
+            Welcome to my profile. Currently an undergraduate student, I am an aspiring developer and generalist with wide ranging interests. Besides tech, I have strong interests in legal and social theories, and I hope to efficiently and pragmatically create positive impacts wherever I work. <br /><br /> Find my overview below.
           </h1>
         </div>
       </div>
