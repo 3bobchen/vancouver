@@ -14,70 +14,71 @@ const Header = () => (
   >
 
     <a href={"/"} className={"logo small"}>BC</a>
-    <div className="dropdown">
-      <Link
-        style={{
-          fontSize: `var(--font-lg)`,
-          textDecoration: `none`
-        }}
-      >
-        <strong>Professional Portfolio</strong>
-      </Link>
-      <div className="dropdown-content">
-        <a href={"./professional/education"}><p style={{ marginBottom: "1vh", marginTop: 0 }}>Education</p></a>
-        <a href={"./professional/experience"}><p style={{ marginBottom: "1vh", marginTop: 0 }}>Experience</p></a>
-        <a href={"./professional/skills"}><p style={{ marginBottom: 0, marginTop: "1vh" }}>Skills</p></a>
-        <a href={"./professional/tprojects"}><p style={{ marginBottom: 0, marginTop: "1vh" }}> Technical
-          Projects</p></a>
-      </div>
-    </div>
-    <div className="dropdown">
+    {/*<div className="dropdown">*/}
+    {/*  <Link*/}
+    {/*    style={{*/}
+    {/*      fontSize: `var(--font-lg)`,*/}
+    {/*      textDecoration: `none`*/}
+    {/*    }}*/}
+    {/*  >*/}
+    {/*    <strong>Professional Portfolio</strong>*/}
+    {/*  </Link>*/}
+    {/*  <div className="dropdown-content">*/}
+    {/*    <a href={"./professional/education"}><p style={{ marginBottom: "1vh", marginTop: 0 }}>Education</p></a>*/}
+    {/*    <a href={"./professional/experience"}><p style={{ marginBottom: "1vh", marginTop: 0 }}>Experience</p></a>*/}
+    {/*    <a href={"./professional/skills"}><p style={{ marginBottom: 0, marginTop: "1vh" }}>Skills</p></a>*/}
+    {/*    <a href={"./professional/tprojects"}><p style={{ marginBottom: 0, marginTop: "1vh" }}> Technical*/}
+    {/*      Projects</p></a>*/}
+    {/*  </div>*/}
+    {/*</div>*/}
+    {/*<div className="dropdown">*/}
+    {/*  <a*/}
+    {/*    href={"./creative/cprojects"}*/}
+    {/*    style={{*/}
+    {/*      fontSize: `var(--font-lg)`,*/}
+    {/*      textDecoration: `none`*/}
+    {/*    }}*/}
+    {/*  >*/}
+    {/*    <strong>Creative Portfolio</strong>*/}
+    {/*  </a>*/}
+    {/*  <div className="dropdown-content">*/}
+    {/*    <a href={"./creative/creativeCoding"}><p style={{ marginBottom: "1vh", marginTop: 0 }}>Creative Coding</p>*/}
+    {/*    </a>*/}
+    {/*    <a href={"./creative/logos"}><p style={{ marginBottom: "1vh", marginTop: "1vh" }}>Logos</p></a>*/}
+    {/*    <a href={"./creative/trailers"}><p style={{ marginBottom: "1vh", marginTop: 0 }}>Trailer Animations</p></a>*/}
+    {/*    <a href={"./creative/videos"}><p style={{ marginBottom: 0, marginTop: "1vh" }}>Video</p></a>*/}
+    {/*  </div>*/}
+    {/*</div>*/}
+    <div style={{display: "flex", gap: "2rem"}}>
       <a
-        href={"./creative/cprojects"}
+        href={"https://drive.google.com/file/d/10hwwA7xFzkZtDQC70Lt5wD9cGJ1qS9tn/view?usp=share_link"}
         style={{
           fontSize: `var(--font-lg)`,
-          textDecoration: `none`
+          textDecoration: `none`,
+          border: "solid",
+          borderColor: "#004ca3",
+          color: "#004ca3",
+          padding: "5px 15px",
+          borderRadius: "10px"
         }}
+        target="_blank"
       >
-        <strong>Creative Portfolio</strong>
+        Resume
       </a>
-      <div className="dropdown-content">
-        <a href={"./creative/creativeCoding"}><p style={{ marginBottom: "1vh", marginTop: 0 }}>Creative Coding</p>
-        </a>
-        <a href={"./creative/logos"}><p style={{ marginBottom: "1vh", marginTop: "1vh" }}>Logos</p></a>
-        <a href={"./creative/trailers"}><p style={{ marginBottom: "1vh", marginTop: 0 }}>Trailer Animations</p></a>
-        <a href={"./creative/videos"}><p style={{ marginBottom: 0, marginTop: "1vh" }}>Video</p></a>
-      </div>
-    </div>
-    <div className="dropdown">
-      <Link
+      <a
+        href={"./contact"}
         style={{
           fontSize: `var(--font-lg)`,
-          textDecoration: `none`
+          textDecoration: `none`,
+          backgroundColor: "#004ca3",
+          color: "#eff1fd",
+          padding: "7.5px 15px",
+          borderRadius: "10px",
         }}
       >
-        <strong>Files</strong>
-      </Link>
-      <div className="dropdown-content">
-        <a
-          href={"https://drive.google.com/file/d/10hwwA7xFzkZtDQC70Lt5wD9cGJ1qS9tn/view?usp=share_link"}>
-          <p style={{ marginBottom: 0, marginTop: 0 }}>PDF Resume</p></a>
-      </div>
+        Contact
+      </a>
     </div>
-    <a
-      href={"./contact"}
-      style={{
-        fontSize: `var(--font-lg)`,
-        textDecoration: `none`,
-        backgroundColor: "#004ca3",
-        color: "#eff1fd",
-        padding: "5px 15px",
-        borderRadius: "10px"
-      }}
-    >
-      Contact
-    </a>
-
   </header>
 );
 
