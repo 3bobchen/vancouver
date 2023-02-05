@@ -40,8 +40,8 @@ const IndexPage = () => (
                     Bob Chen
                 </span>
             <h1>
-              <b>Law and Computer Science Student</b> <br />
-              <b>Aspiring developer and lawyer</b>
+              <b>Sydney based student/dev</b> <br />
+              <b>with a broad tech and legal interest</b>
             </h1>
           </div>
         </div>
@@ -68,9 +68,7 @@ const IndexPage = () => (
             width: "90%",
             fontWeight: 300
           }}>
-            Based in Sydney, I am a double degree uni student with experience and knowledge in a broad range
-            of disciplines. <br /><br /> Browse this site and get to know my work
-            better.
+            Welcome to my profile. Currently an undergraduate student, I am an aspiring developer and generalist with wide ranging interests. I am widely travelled and have a strong interest in social theory, hoping to efficiently and pragmatically create positive impacts wherever I work. <br /><br /> Find my overview below.
           </h1>
         </div>
       </div>
