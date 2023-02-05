@@ -6,7 +6,7 @@ import Seo from "../components/seo";
 
 const SecondPage = () => (
   <Layout>
-    <h1 style={{ textAlign: "center", margin: "6vh 0" }}>Contact</h1>
+    <h1 style={{ textAlign: "center", margin: "6vh 0" }}>Contact Channels</h1>
     <div style={{ display: "flex", flexDirection: "column", gap: "10vh", marginBottom: "10vh" }}>
       <div style={{ display: "flex", flexDirection: "row", flex: 3, gap: "10vw", justifyContent: "center" }}>
         <a href={"mailto:main.bobchen@gmail.com"}
@@ -30,26 +30,23 @@ const SecondPage = () => (
           </h2></a>
       </div>
       <div style={{ display: "flex", flexDirection: "row", flex: 3, gap: "10vw", justifyContent: "center" }}>
-        <a href={"www.linkedin.com/in/3bobchen"}
+        <a target="_blank" href="https://www.linkedin.com/in/3bobchen/"
            style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-          {
-            <SocialIcon style={{ width: "7rem", height: "7rem" }} url="www.linkedin.com/in/3bobchen"
+            <SocialIcon style={{ width: "7rem", height: "7rem" }}
                         network={"linkedin"} />
-          }
-          <h2>LinkedIn</h2></a>
-        <a href={"www.linkedin.com/in/3bobchen"}
+          <h2>LinkedIn</h2>
+        </a>
+        {/*<a href={"www.linkedin.com/in/3bobchen"}*/}
+        {/*   style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>*/}
+        {/*  {*/}
+        {/*    <SocialIcon style={{ width: "7rem", height: "7rem" }} url="https://www.behance.net/bobchen10"*/}
+        {/*                network={"behance"} />*/}
+        {/*  }*/}
+        {/*  <h2>Behance</h2></a>*/}
+        <a target="_blank" href={"https://github.com/3bobchen"}
            style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-          {
-            <SocialIcon style={{ width: "7rem", height: "7rem" }} url="https://www.behance.net/bobchen10"
-                        network={"behance"} />
-          }
-          <h2>Behance</h2></a>
-        <a href={"www.linkedin.com/in/3bobchen"}
-           style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-          {
-            <SocialIcon style={{ width: "7rem", height: "7rem" }} url="https://github.com/3bobchen"
+            <SocialIcon style={{ width: "7rem", height: "7rem" }}
                         network={"github"} />
-          }
           <h2>Github</h2></a>
       </div>
     </div>
