@@ -13,7 +13,7 @@ const IndexPage = () => (
       <div className={`${styles.hero} ${styles.child}`}>
         <div className={styles.persona}>
           <StaticImage
-            src="../images/portrait-animated.png"
+            src="../images/IMG_2327.png"
             loading="eager"
             placeholder="blurred"
             quality={100}
@@ -34,7 +34,8 @@ const IndexPage = () => (
             marginLeft: "auto",
             marginRight: "auto",
             justifyContent: "center",
-            alignItems: "center"
+            alignItems: "center",
+            paddingTop: "2rem"
           }}>
                 <span className={"logo title"}>
                     Bob Chen
@@ -76,131 +77,6 @@ const IndexPage = () => (
       <div className={styles.child}>
         <Actions></Actions>
       </div>
-
-
-      {/*<div style={{*/}
-      {/*  display: "flex",*/}
-      {/*  flexDirection: "column",*/}
-      {/*  background: "#eff6ff",*/}
-      {/*  // #e6f1ff*/}
-      {/*  padding: "1rem",*/}
-      {/*  borderRadius: "1rem"*/}
-      {/*}}>*/}
-      {/*  <h1 style={{ margin: "1rem 3rem" }}>*/}
-      {/*    <b>Education</b>*/}
-      {/*  </h1>*/}
-      {/*  <div style={{ display: "flex", flexDirection: "row", gap: "4rem", margin: "2rem 3rem" }}>*/}
-      {/*    <StaticImage src={"../images/unsw.jpeg"} alt={""}*/}
-      {/*                 style={{ flex: 1, maxWidth: "9rem", minWidth: "7rem" }} />*/}
-      {/*    <div style={{ flex: 4, fontSize: "1rem", textAlign: "left", alignSelf: "center" }}>*/}
-      {/*      <h2 style={{ lineHeight: "1rem" }}>*/}
-      {/*        Bachelor of Laws*/}
-      {/*      </h2>*/}
-      {/*      <h2 style={{ lineHeight: "1rem" }}>*/}
-      {/*        Bachelor of Science (Computer Science)*/}
-      {/*      </h2>*/}
-      {/*      <h2 style={{ lineHeight: "1rem", fontWeight: 300 }}>*/}
-      {/*        2025 Completion*/}
-      {/*      </h2>*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*  <a style={{ margin: "1rem 3rem", textAlign: "right" }}>*/}
-      {/*    Find out more*/}
-      {/*  </a>*/}
-      {/*</div>*/}
-
-      {/*<div style={{*/}
-      {/*  display: "flex",*/}
-      {/*  flexDirection: "column",*/}
-      {/*  background: "#eff6ff",*/}
-      {/*  // #e6f1ff*/}
-      {/*  padding: "1rem",*/}
-      {/*  borderRadius: "1rem"*/}
-      {/*}}>*/}
-      {/*  <h1 style={{ margin: "1rem 3rem" }}>*/}
-      {/*    <b>Work</b>*/}
-      {/*  </h1>*/}
-      {/*  <div style={{ display: "flex", flexDirection: "row", gap: "4rem", margin: "2rem 3rem" }}>*/}
-      {/*    <StaticImage src={"../images/jade.webp"} alt={""}*/}
-      {/*                 style={{ flex: 1, maxWidth: "7rem", minWidth: "6rem" }} />*/}
-      {/*    <div style={{ flex: 4, fontSize: "1rem", textAlign: "left", alignSelf: "center" }}>*/}
-      {/*      <h2 style={{ lineHeight: "1rem" }}>*/}
-      {/*        Barnet Pty Ltd*/}
-      {/*      </h2>*/}
-      {/*      <h2 style={{ lineHeight: "1rem" }}>*/}
-      {/*        Junior Software Engineer*/}
-      {/*      </h2>*/}
-      {/*      <h2 style={{ lineHeight: "1rem", fontWeight: 300 }}>*/}
-      {/*        2021 - Present*/}
-      {/*      </h2>*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*  <div style={{ display: "flex", flexDirection: "row", gap: "4rem", margin: "2rem 3rem" }}>*/}
-      {/*    <StaticImage src={"../images/volt.png"} alt={""}*/}
-      {/*                 style={{ flex: 1, maxWidth: "9rem", minWidth: "7rem" }} />*/}
-      {/*    <div style={{ flex: 4, fontSize: "1rem", textAlign: "left", alignSelf: "center" }}>*/}
-      {/*      <h2 style={{ lineHeight: "1rem" }}>*/}
-      {/*        Volt Bank*/}
-      {/*      </h2>*/}
-      {/*      <h2 style={{ lineHeight: "1rem" }}>*/}
-      {/*        IT Operations Intern*/}
-      {/*      </h2>*/}
-      {/*      <h2 style={{ lineHeight: "1rem", fontWeight: 300 }}>*/}
-      {/*        2022*/}
-      {/*      </h2>*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*  <a style={{ margin: "1rem 3rem", textAlign: "right" }}>*/}
-      {/*    Find out more*/}
-      {/*  </a>*/}
-      {/*</div>*/}
-
-      {/*<div style={{*/}
-      {/*  display: "flex",*/}
-      {/*  flexDirection: "column",*/}
-      {/*  background: "#eff6ff",*/}
-      {/*  // #e6f1ff*/}
-      {/*  padding: "1rem",*/}
-      {/*  borderRadius: "1rem"*/}
-      {/*}}>*/}
-      {/*  <h1 style={{ margin: "1rem 3rem" }}>*/}
-      {/*    <b>Projects</b>*/}
-      {/*  </h1>*/}
-      {/*  <div style={{ display: "flex", flexDirection: "row", gap: "4rem", margin: "2rem 3rem" }}>*/}
-      {/*    <StaticImage src={"../images/csesoc.png"} alt={""}*/}
-      {/*                 style={{ flex: 1, maxWidth: "9rem", minWidth: "8rem" }} />*/}
-      {/*    <div style={{ flex: 4, fontSize: "1rem", textAlign: "left", alignSelf: "center" }}>*/}
-      {/*      <h2 style={{ lineHeight: "1rem" }}>*/}
-      {/*        Freerooms*/}
-      {/*      </h2>*/}
-      {/*      <h2 style={{ lineHeight: "1rem" }}>*/}
-      {/*        Project Lead*/}
-      {/*      </h2>*/}
-      {/*      <h2 style={{ lineHeight: "1rem", fontWeight: 300 }}>*/}
-      {/*        2022*/}
-      {/*      </h2>*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*  <div style={{ display: "flex", flexDirection: "row", gap: "4rem", margin: "2rem 3rem" }}>*/}
-      {/*    <StaticImage src={"../images/fintech-sig.png"} alt={""}*/}
-      {/*                 style={{ flex: 1, maxWidth: "9rem", minWidth: "8rem" }} />*/}
-      {/*    <div style={{ flex: 4, fontSize: "1rem", textAlign: "left", alignSelf: "center" }}>*/}
-      {/*      <h2 style={{ lineHeight: "1rem" }}>*/}
-      {/*        Algothon*/}
-      {/*      </h2>*/}
-      {/*      <h2 style={{ lineHeight: "1rem" }}>*/}
-      {/*        Fintech Events Director*/}
-      {/*      </h2>*/}
-      {/*      <h2 style={{ lineHeight: "1rem", fontWeight: 300 }}>*/}
-      {/*        2022*/}
-      {/*      </h2>*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*  <a style={{ margin: "1rem 3rem", textAlign: "right" }}>*/}
-      {/*    Find out more*/}
-      {/*  </a>*/}
-      {/*</div>*/}
-
     </div>
 
   </Layout>
