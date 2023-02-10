@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Bob Chen Portfolio`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Portfolio/Profile for Bob Chen`,
     author: `@3bobchen`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`
+    siteUrl: `https://bobchen.dev`
   },
   plugins: [
     `gatsby-plugin-image`,
