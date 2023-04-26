@@ -13,7 +13,7 @@ const IndexPage = () => (
       <div className={`${styles.hero} ${styles.child}`}>
         <div className={styles.persona}>
           <StaticImage
-            src="../images/IMG_2327.png"
+            src="../images/IMG_3192.jpeg"
             loading="eager"
             placeholder="blurred"
             quality={100}
@@ -25,7 +25,8 @@ const IndexPage = () => (
               marginRight: "auto",
               maxWidth: "17rem",
               marginTop: "auto",
-              marginBottom: "auto"
+              marginBottom: "auto",
+              borderRadius: "1rem"
             }}
           />
           <div style={{
