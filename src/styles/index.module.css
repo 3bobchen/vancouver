@@ -75,8 +75,8 @@
 .persona {
   text-align: center;
   display: flex;
+  flex-direction: column-reverse;
   justify-content: center;
-  padding: 1rem;
   flex: 1.5;
   width: 100%;
   margin-left: auto;
@@ -90,5 +90,14 @@
   justify-content: flex-start;
   flex: 1;
   max-width: 950px;
-  margin: auto auto;
+  margin: 17rem auto auto;
+}
+
+.pad {
+  background: rgba( 255, 255, 255, 0.5 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7px );
+  -webkit-backdrop-filter: blur( 7px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }

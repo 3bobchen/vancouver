@@ -12,6 +12,28 @@ const IndexPage = () => (
     <div className={styles.container} style={{ display: "flex", flexDirection: "column" }}>
       <div className={`${styles.hero} ${styles.child}`}>
         <div className={styles.persona}>
+          <div className={styles.pad} style={{
+            position: "absolute",
+            top: "550px",
+            left: 0,
+            right: 0,
+            zIndex: "20",
+            display: "flex",
+            flexDirection: "column",
+            marginLeft: "auto",
+            marginRight: "auto",
+            justifyContent: "center",
+            paddingTop: "2rem",
+            maxWidth: "800px"
+          }}>
+                <span className={"logo title"}>
+                    Bob Chen
+                </span>
+            <h1>
+              <b>Sydney based student-dev</b> <br />
+              <b>with a broad tech and legal interest</b>
+            </h1>
+          </div>
           <StaticImage
             src="../images/IMG_3192.jpeg"
             loading="eager"
@@ -23,29 +45,12 @@ const IndexPage = () => (
             style={{
               marginLeft: "auto",
               marginRight: "auto",
-              maxWidth: "17rem",
+              maxWidth: "540px",
               marginTop: "auto",
               marginBottom: "auto",
               borderRadius: "1rem"
             }}
           />
-          <div style={{
-            display: "flex",
-            flexDirection: "column",
-            marginLeft: "auto",
-            marginRight: "auto",
-            justifyContent: "center",
-            alignItems: "center",
-            paddingTop: "2rem"
-          }}>
-                <span className={"logo title"}>
-                    Bob Chen
-                </span>
-            <h1>
-              <b>Sydney based student/dev</b> <br />
-              <b>with a broad tech and legal interest</b>
-            </h1>
-          </div>
         </div>
 
         <div className={styles.greeting}>
@@ -54,7 +59,6 @@ const IndexPage = () => (
             fontSize: "2rem",
             color: "#004ca3",
             fontWeight: 600,
-            justifyContent: "flex-start"
           }}>
             {new Date().getHours() < 2 ? <span
               style={{}}>Hi there, you're up late!</span> : new Date().getHours() < 6 ?
@@ -70,7 +74,7 @@ const IndexPage = () => (
             width: "90%",
             fontWeight: 300
           }}>
-            Welcome to my profile. Currently an undergraduate student, I am an aspiring developer and generalist with wide ranging interests. Besides tech, I have strong interests in legal and social theories, and I hope to efficiently and pragmatically create positive impacts wherever I work. <br /><br /> Find my overview below.
+            Welcome to my profile. Currently an undergraduate student, I am an aspiring developer and generalist with wide ranging interests. Besides tech, I have strong interests in legal and social studies, and I hope to efficiently and pragmatically create positive impacts wherever I work. <br /><br /> Find my overview below.
           </h1>
         </div>
       </div>
