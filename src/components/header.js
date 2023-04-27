@@ -51,6 +51,20 @@ const Header = () => (
     {/*</div>*/}
     <div style={{display: "flex", gap: "2rem"}}>
       <a
+        href={"/essays"}
+        style={{
+          fontSize: `var(--font-lg)`,
+          textDecoration: `none`,
+          border: "solid",
+          borderColor: "#004ca3",
+          color: "#004ca3",
+          padding: "5px 15px",
+          borderRadius: "10px"
+        }}
+      >
+        Essays
+      </a>
+      <a
         href={"https://drive.google.com/file/d/1JPyq08w1Vg3hKOk65-fWvQqx20Pwu-gx/view?usp=sharing"}
         style={{
           fontSize: `var(--font-lg)`,
