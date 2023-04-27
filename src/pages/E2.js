@@ -23,18 +23,12 @@ const SecondPage = () => {
         BOB CHEN
       </p>
       <div style={{ display: "flex", flexDirection: "column", gap: "10vh", marginBottom: "10vh" }}>
-        <div className={styles.pad} style={{ maxWidth: "1000px", margin: "auto" }}>
+        <div className={styles.pad} style={{ maxWidth: "1000px", margin: "auto", width: "100%" }}>
           <br />
           <h2 style={{ textAlign: "center", margin: "3vh 0", fontFamily: "serif", fontWeight: "normal" }}>
             I INTRODUCTION
           </h2>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             Central Bank Digital Currencies (CBDCs) are a relatively novel economic concept which have
             materialised in response to the digitisation of global and domestic economies. As individual,
             corporate and government transactions are increasingly being conducted digitally and not
@@ -64,13 +58,7 @@ const SecondPage = () => {
           }}>
             A <em>Objective</em>
           </h3>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             This essay recognises fundamentally that <u>privacy is not the same as security</u>. Of course, privacy
             depends on a secure technology framework, but it is about so much more. Since CBDCs are
             controlled currencies, central banks and institutions will always have significant visibility and
@@ -96,13 +84,7 @@ const SecondPage = () => {
           }}>
             B <em>Privacy Issues</em>
           </h3>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             As with new technological conceptions of the recent past, CBDCs raise several categories of
             privacy issues. One of those categories relates to government surveillance and elicit the
             following concerns.
@@ -141,13 +123,7 @@ const SecondPage = () => {
           }}>
             C <em>Context</em>
           </h3>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             The utopian and satisfying comfort of absolute data privacy can temporarily devalue the
             importance of access to data for the purposes of investigation and interception by civil and
             criminal investigators. Consideration of CBDC privacy should bear in mind the current privacy,
@@ -179,13 +155,7 @@ const SecondPage = () => {
           <h2 style={{ textAlign: "center", margin: "3vh 0", fontFamily: "serif", fontWeight: "normal" }}>
             II SOLUTIONS
           </h2>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             Privacy attributes of solutions can be compared through the modelling of two standards. These
             are <u>the ability for the state to access transaction and account data</u> and <u>the ability for private
             entities to commercialise transaction and account data</u> [5]. The underlying implementation of
@@ -215,13 +185,7 @@ const SecondPage = () => {
           }}>
             A <em>Permissioned Distributed Ledger</em>
           </h3>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             A permissioned distributed ledger (PDL) CBDC is based on the research, experience, and
             learnings from traditional distributed ledger cryptocurrencies such as Bitcoin which has been
             publicly available since 2009. While their underlying architectures are similar, they differ in
@@ -274,13 +238,7 @@ const SecondPage = () => {
           }}>
             B <em>Digital Currency Electronic Payments</em>
           </h3>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             The People’s Bank of China (PBOC) has, unlike Sweden, designed their own underlying
             framework which is technologically agnostic however can be stored as a PDL in the future.
             Research began in 2014 and China is currently the only developed nation with a mature testing
@@ -310,26 +268,14 @@ const SecondPage = () => {
           }}>
             1 Controlled Direct Liability
           </h4>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             This form of public private partnership increases the function of the central bank in day-to-day
             banking. It is an account-based model where deposits are directly held at the central bank in
             individual accounts for each customer [17]. These deposits will be controlled by financial
             institutions who will perform KYC, customer interaction/instruction, onboarding, and support
             functions. These institutions will not own these deposits [17].
           </p>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             Countries such as the United Kingdom and Australia have been investigating this model of
             operation for their CBDCs however no concrete implementation has been selected [18]. This
             model reduces data that the bank needs to hold and be responsible for. Banks can still attain a
@@ -348,13 +294,7 @@ const SecondPage = () => {
           }}>
             2 Comingled Pools
           </h4>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             The comingled pool is the model which most preserves the current form of banking
             responsibilities and control. It is an account-based system where financial institutions will hold
             account entries at the central bank [17]. Customers will have their own accounts with their
@@ -373,25 +313,13 @@ const SecondPage = () => {
           }}>
             D <em>Central Bank Direct</em>
           </h3>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             The direct model for CBDCs is the model which most reduces the role of financial institutions
             in future financial transactions. It makes customers direct responsibilities of the central bank
             removing the need for commercial deposit taking institutions. The central bank will be
             responsible for KYC and AML supervision as well as day-to-day transactions.
           </p>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             No major economy has currently proposed this model of a CBDC because of concern that it
             will drastically affect the integrity, confidence and stability of existing deposit taking
             institutions as well as a mild population distrust of perceived direct government control of the
@@ -400,13 +328,7 @@ const SecondPage = () => {
           <h2 style={{ textAlign: "center", margin: "3vh 0", fontFamily: "serif", fontWeight: "normal" }}>
             III THE DIGITAL POUND
           </h2>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             The Bank of England (BoE) has studied the potential for a CBDC since 2016. When the UK
             took the presidency of the G7 in 2021, they set public policy principles for CBDC development
             which includes standards relating to law, regulation, security, and monetary policy [19]. These
@@ -422,13 +344,7 @@ const SecondPage = () => {
           }}>
             A <em>Implementation Architecture</em>
           </h3>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             The architecture is proposed to be a centralised ledger being run by the BoE. The digital pound
             relies on a public private operation using either the aforementioned controlled direct liability
             model or the comingled pool model [20].
@@ -481,13 +397,7 @@ const SecondPage = () => {
           }}>
             B <em>Commercial Access to Data</em>
           </h3>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             <em>Will banks and other financial institutions have access to balance and transaction data?</em>
             <br />
             Yes. Banks and financial institutions have access to all balance and transaction data like
@@ -509,13 +419,7 @@ const SecondPage = () => {
           }}>
             C <em>State Access to Data</em>
           </h3>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             <em>Will the central bank have access to individual balance and transaction data?</em>
             <br />
             The central bank, through their ledger, can see account balances and transaction data. They
@@ -541,13 +445,7 @@ const SecondPage = () => {
           <h2 style={{ textAlign: "center", margin: "3vh 0", fontFamily: "serif", fontWeight: "normal" }}>
             IV THE DIGITAL YUAN
           </h2>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             The People’s Bank of China (PBOC) began digital yuan research in 2014 with the first pilot
             being deployed in 2020 and wider pilots being deployed across China during the 2022 Winter
             Olympics reaching over 10 major cities. It meets cash-like accessibility attributes such as a low
@@ -567,13 +465,7 @@ const SecondPage = () => {
           }}>
             A <em>Implementation Architecture</em>
           </h3>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             The digital yuan has a multi-tier model of operation involving existing institutions [16].
             <ol>
               <li>The PBOC maintains a ledger for digital yuan deposits. They are the sole body with
@@ -628,13 +520,7 @@ const SecondPage = () => {
           }}>
             B <em>Commercial Access to Data</em>
           </h3>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             <em>Will banks and other financial institutions have access to balance and transaction data?</em>
             <br />
             Not exactly. A digital yuan wallet is a standalone app or hardware device. While select banks
@@ -665,13 +551,7 @@ const SecondPage = () => {
           }}>
             C <em>State Access to Data</em>
           </h3>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             <em>Will the central bank have access to individual balance and transaction data?</em>
             <br />
             Yes. The central bank will have access to individual balance and transaction data tied to each
@@ -708,13 +588,7 @@ const SecondPage = () => {
           }}>
             A <em>Implementation Architecture</em>
           </h3>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             The BoE proposal for their CBDC places a strong emphasis on existing institutional
             participation. Although well intentioned, this emphasis on the private sector and fear of the
             central bank taking a greater role in the currency’s implementation has resulted in the BoE
@@ -744,13 +618,7 @@ const SecondPage = () => {
           }}>
             B <em>Commercial Access to Data</em>
           </h3>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             The BoE model essentially is a banking backend which all banks can use to offer their products.
             Hence, they will largely have similar access and visibility to data which they can commercialise
             per their terms. Governments should be cautious of increasing for-profit corporation access to
@@ -769,13 +637,7 @@ const SecondPage = () => {
           }}>
             C <em>State Access to Data</em>
           </h3>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             The BoE model moderately increases data which the government (central bank) stores since a
             ledger is now being stored by the BoE and not by individual banks. The PBOC will now also
             have visibility of cash holdings in anonymised accounts and access to mobile phone numbers
@@ -786,13 +648,7 @@ const SecondPage = () => {
           <h2 style={{ textAlign: "center", margin: "3vh 0", fontFamily: "serif", fontWeight: "normal" }}>
             VI CONCLUSIONS
           </h2>
-          <p style={{
-            textAlign: "justify",
-            fontFamily: "serif",
-            maxWidth: "100%",
-            padding: "0 5rem",
-            fontSize: "1.3rem"
-          }}>
+          <p className={styles.reader_p}>
             An examination of a range of CBDC models reveals the intention of central banks is the
             standardisation of internet banking, making it state-sponsored, universally accessible and at no
             cost to the end consumer. The absolute anonymity of cash is dead. It is not being considered a
