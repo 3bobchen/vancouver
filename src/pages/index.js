@@ -12,28 +12,6 @@ const IndexPage = () => (
     <div className={styles.container} style={{ display: "flex", flexDirection: "column" }}>
       <div className={`${styles.hero} ${styles.child}`}>
         <div className={styles.persona}>
-          <div className={styles.pad} style={{
-            position: "absolute",
-            top: "550px",
-            left: 0,
-            right: 0,
-            zIndex: "20",
-            display: "flex",
-            flexDirection: "column",
-            marginLeft: "auto",
-            marginRight: "auto",
-            justifyContent: "center",
-            paddingTop: "2rem",
-            maxWidth: "800px"
-          }}>
-                <span className={"logo title"}>
-                    Bob Chen
-                </span>
-            <h1>
-              <b>Sydney based student-dev</b> <br />
-              <b>with a broad tech and legal interest</b>
-            </h1>
-          </div>
           <StaticImage
             src="../images/IMG_3192.jpeg"
             loading="eager"
@@ -51,6 +29,30 @@ const IndexPage = () => (
               borderRadius: "1rem"
             }}
           />
+        </div>
+        <div className={styles.pad} style={{
+          position: "relative",
+          left: 0,
+          right: 0,
+          top: "-3rem",
+          zIndex: "20",
+          display: "flex",
+          flexDirection: "column",
+          marginLeft: "auto",
+          marginRight: "auto",
+          justifyContent: "center",
+          paddingTop: "2rem",
+          width: "100%",
+          maxWidth: "800px",
+          textAlign: "center"
+        }}>
+                <span className={"logo title"}>
+                    Bob Chen
+                </span>
+          <h1>
+            <b>Sydney based student-dev</b> <br />
+            <b>with a broad tech and legal interest</b>
+          </h1>
         </div>
 
         <div className={styles.greeting}>
