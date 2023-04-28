@@ -6,7 +6,7 @@ import * as styles from "../styles/index.module.css";
 
 const SecondPage = () => (
   <Layout>
-    <h1 style={{ textAlign: "center", margin: "5rem 0", fontSize: "4rem" }}>Written Work</h1>
+    <h1 style={{ textAlign: "center", margin: "5rem 0", fontSize: "4rem" }}>Essays</h1>
     <div style={{ display: "flex", flexDirection: "column", gap: "10vh", marginBottom: "10vh" }}>
       <div style={{ display: "flex", flexDirection: "row", flex: 3, gap: "10vw", justifyContent: "center" }}>
         <a href={"/essays/E1"} className={styles.pad}

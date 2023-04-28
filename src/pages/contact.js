@@ -6,7 +6,7 @@ import Seo from "../components/seo";
 
 const SecondPage = () => (
   <Layout>
-    <h1 style={{ textAlign: "center", margin: "6vh 0" }}>Contact Channels</h1>
+    <h1 style={{ textAlign: "center", margin: "6vh 0", fontSize: "4rem" }}>Contact Channels</h1>
     <div style={{ display: "flex", flexDirection: "column", gap: "10vh", marginBottom: "10vh" }}>
       <div style={{ display: "flex", flexDirection: "row", flex: 3, gap: "10vw", justifyContent: "center" }}>
         <a href={"mailto:main.bobchen@gmail.com"}
