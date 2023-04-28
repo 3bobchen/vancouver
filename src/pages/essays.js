@@ -9,7 +9,7 @@ const SecondPage = () => (
     <h1 style={{ textAlign: "center", margin: "5rem 0", fontSize: "4rem" }}>Written Work</h1>
     <div style={{ display: "flex", flexDirection: "column", gap: "10vh", marginBottom: "10vh" }}>
       <div style={{ display: "flex", flexDirection: "row", flex: 3, gap: "10vw", justifyContent: "center" }}>
-        <a href={"/E1"} className={styles.pad}
+        <a href={"/essays/E1"} className={styles.pad}
            style={{
              display: "flex",
              flexDirection: "column",
@@ -29,7 +29,7 @@ const SecondPage = () => (
           </h2></a>
       </div>
       <div style={{ display: "flex", flexDirection: "row", flex: 3, gap: "10vw", justifyContent: "center" }}>
-        <a href={"/E2"} className={styles.pad}
+        <a href={"/essays/E2"} className={styles.pad}
            style={{
              display: "flex",
              flexDirection: "column",
