@@ -80,7 +80,7 @@ const Header = () => (
         Resume
       </a>
       <a
-        href={"./contact"}
+        href={"/contact"}
         style={{
           fontSize: `var(--font-lg)`,
           textDecoration: `none`,
