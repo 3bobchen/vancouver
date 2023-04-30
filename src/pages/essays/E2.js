@@ -3,6 +3,7 @@ import * as React from "react";
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import * as styles from "../../styles/index.module.css";
+import { StaticImage } from "gatsby-plugin-image";
 
 const SecondPage = () => {
 
@@ -170,7 +171,27 @@ const SecondPage = () => {
             Whereas an account-based system can query the ledger for an account balance, a
             token system relies on the spending of a token possessing some sort of private key meaning the
             token can only be spent once <a href={"#7"}>[7]</a>.
-            <br /><br />
+          </p>
+          <StaticImage
+            src="./images/Screenshot 2023-04-29 at 5.26.54 pm.png"
+            loading="lazy"
+            placeholder="blurred"
+            quality={100}
+            formats={["auto", "webp", "avif"]}
+            alt=""
+            id="profile-photo"
+            style={{
+              marginLeft: "auto",
+              marginRight: "auto",
+              maxWidth: "550px",
+              marginTop: "auto",
+              marginBottom: "1.5rem",
+              borderRadius: "1rem",
+              display: "flex",
+              justifyContent: "center"
+            }}
+          />
+          <p className={styles.reader_p}>
             The two points of reference for this rough comparison are cash and bank accounts <a href={"#8"}>[8]</a>.
             Cash is
             a token style system where ownership is attached to the token (note/coin). It has a low ability
@@ -212,7 +233,27 @@ const SecondPage = () => {
             <br /><br />
             Sweden has indicated their intention to create a CBDC of this structure via central bank
             whitepapers beginning 2017 <a href={"#11"}>[11]</a>.
-            <br /><br />
+          </p>
+          <StaticImage
+            src="./images/Screenshot 2023-04-29 at 5.27.05 pm.png"
+            loading="lazy"
+            placeholder="blurred"
+            quality={100}
+            formats={["auto", "webp", "avif"]}
+            alt=""
+            id="profile-photo"
+            style={{
+              marginLeft: "auto",
+              marginRight: "auto",
+              maxWidth: "550px",
+              marginTop: "auto",
+              marginBottom: "1.5rem",
+              borderRadius: "1rem",
+              display: "flex",
+              justifyContent: "center"
+            }}
+          />
+          <p className={styles.reader_p}>
             The e-krona uses the Corda by R3 PDL <a href={"#12"}>[12]</a>. It is intended to have a separate notary node
             which
             acts as the “miner” for e-krona transactions <a href={"#12"}>[12]</a>.
@@ -249,6 +290,25 @@ const SecondPage = () => {
           }}>
             B <em>Digital Currency Electronic Payments</em>
           </h3>
+          <StaticImage
+            src="./images/Screenshot 2023-04-29 at 5.27.12 pm.png"
+            loading="lazy"
+            placeholder="blurred"
+            quality={100}
+            formats={["auto", "webp", "avif"]}
+            alt=""
+            id="profile-photo"
+            style={{
+              marginLeft: "auto",
+              marginRight: "auto",
+              maxWidth: "800px",
+              marginTop: "auto",
+              marginBottom: "1.5rem",
+              borderRadius: "1rem",
+              display: "flex",
+              justifyContent: "center"
+            }}
+          />
           <p className={styles.reader_p}>
             The People’s Bank of China (PBOC) has, unlike Sweden, designed their own underlying
             framework which is technologically agnostic however can be stored as a PDL in the future.
@@ -287,6 +347,25 @@ const SecondPage = () => {
             institutions who will perform KYC, customer interaction/instruction, onboarding, and support
             functions. These institutions will not own these deposits <a href={"#17"}>[17]</a>.
           </p>
+          <StaticImage
+            src="./images/Screenshot 2023-04-29 at 5.27.20 pm.png"
+            loading="lazy"
+            placeholder="blurred"
+            quality={100}
+            formats={["auto", "webp", "avif"]}
+            alt=""
+            id="profile-photo"
+            style={{
+              marginLeft: "auto",
+              marginRight: "auto",
+              maxWidth: "800px",
+              marginTop: "auto",
+              marginBottom: "1.5rem",
+              borderRadius: "1rem",
+              display: "flex",
+              justifyContent: "center"
+            }}
+          />
           <p className={styles.reader_p}>
             Countries such as the United Kingdom and Australia have been investigating this model of
             operation for their CBDCs however no concrete implementation has been selected <a href={"#18"}>[18]</a>.
@@ -319,6 +398,25 @@ const SecondPage = () => {
             see the macro pools of currency under management by banks. Banks will have equal access to
             account and transaction data as they do now.
           </p>
+          <StaticImage
+            src="./images/Screenshot 2023-04-29 at 5.27.26 pm.png"
+            loading="lazy"
+            placeholder="blurred"
+            quality={100}
+            formats={["auto", "webp", "avif"]}
+            alt=""
+            id="profile-photo"
+            style={{
+              marginLeft: "auto",
+              marginRight: "auto",
+              maxWidth: "800px",
+              marginTop: "auto",
+              marginBottom: "1.5rem",
+              borderRadius: "1rem",
+              display: "flex",
+              justifyContent: "center"
+            }}
+          />
           <h3 style={{
             textAlign: "center",
             margin: "1vh 0",
@@ -334,6 +432,25 @@ const SecondPage = () => {
             removing the need for commercial deposit taking institutions. The central bank will be
             responsible for KYC and AML supervision as well as day-to-day transactions.
           </p>
+          <StaticImage
+            src="./images/Screenshot 2023-04-29 at 5.27.31 pm.png"
+            loading="lazy"
+            placeholder="blurred"
+            quality={100}
+            formats={["auto", "webp", "avif"]}
+            alt=""
+            id="profile-photo"
+            style={{
+              marginLeft: "auto",
+              marginRight: "auto",
+              maxWidth: "800px",
+              marginTop: "auto",
+              marginBottom: "1.5rem",
+              borderRadius: "1rem",
+              display: "flex",
+              justifyContent: "center"
+            }}
+          />
           <p className={styles.reader_p}>
             No major economy has currently proposed this model of a CBDC because of concern that it
             will drastically affect the integrity, confidence and stability of existing deposit taking
