@@ -1,122 +1,129 @@
 .list {
-  display: grid;
-  margin: 0;
-  /* https://css-tricks.com/responsive-layouts-fewer-media-queries/ */
-  --w: 280px;
-  --n: 2;
-  gap: var(--size-gap);
-  grid-template-columns: repeat(
+    display: grid;
+    margin: 0;
+    /* https://css-tricks.com/responsive-layouts-fewer-media-queries/ */
+    --w: 280px;
+    --n: 2;
+    gap: var(--size-gap);
+    grid-template-columns: repeat(
     auto-fit,
-    minmax(max(var(--w), 100%/ (var(--n) + 1) + 0.1%), 1fr)
+    minmax(max(var(--w), 100% / (var(--n) + 1) + 0.1%), 1fr)
   );
-  margin-bottom: var(--size-gap);
-  margin-top: var(--size-gap);
+    margin-bottom: var(--size-gap);
+    margin-top: var(--size-gap);
 }
 
 .listItem {
-  margin: 0;
+    margin: 0;
 }
 
 .listItem::marker {
-  color: #e95800;
+    color: #e95800;
 }
 
 .listItem:nth-child(2)::marker {
-  color: #159bf3;
+    color: #159bf3;
 }
 
 .listItem:nth-child(3)::marker {
-  color: #8eb814;
+    color: #8eb814;
 }
 
 .listItem:nth-child(4)::marker {
-  color: #663399;
+    color: #663399;
 }
 
 .listItemLink {
-  color: var(--color-primary);
-  font-weight: bold;
+    color: var(--color-primary);
+    font-weight: bold;
 }
 
 .textCenter {
-  text-align: center;
+    text-align: center;
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container {
-  scroll-snap-type: y mandatory;
-  scroll-snap-points-y: repeat 3rem;
+    scroll-snap-type: y mandatory;
+    scroll-snap-points-y: repeat 3rem;
 }
 
 .child {
-  scroll-snap-align: start;
+    scroll-snap-align: start;
 }
 
 @media (min-width: 1000px) {
-  .persona {
-    gap: 2rem;
-    margin-bottom: 1rem;
-  }
+    .persona {
+        gap: 2rem;
+        margin-bottom: 1rem;
+    }
 }
 
 @media (max-width: 1000px) {
-  .persona {
-    flex-direction: column;
-    gap: 2rem
-  }
+    .persona {
+        flex-direction: column;
+        gap: 2rem
+    }
 }
 
 .persona {
-  text-align: center;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  flex: 1.5;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex: 1.5;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .greeting {
-  text-align: justify;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex: 1;
-  max-width: 950px;
-  margin: 2rem auto auto;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    max-width: 950px;
 }
 
 .pad {
-  background: rgba( 255, 255, 255, 0.5 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 7px );
-  -webkit-backdrop-filter: blur( 7px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-@media (max-width:600px) {
-  .reader_p {
-    text-align: justify;
-    font-family: serif;
-    max-width: 100%;
-    padding: 0 2rem;
-    font-size: 1rem;
-  }
+@media (max-width: 600px) {
+    .reader_p {
+        text-align: justify;
+        font-family: serif;
+        max-width: 100%;
+        padding: 0 2rem;
+        font-size: 1rem;
+    }
 }
-@media (min-width:600px) {
-  .reader_p {
-    text-align: justify;
-    font-family: serif;
-    max-width: 100%;
-    padding: 0 5rem;
-    font-size: 1.3rem;
-  }
+
+@media (min-width: 600px) {
+    .reader_p {
+        text-align: justify;
+        font-family: serif;
+        max-width: 100%;
+        padding: 0 5rem;
+        font-size: 1.3rem;
+    }
+}
+
+.table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }

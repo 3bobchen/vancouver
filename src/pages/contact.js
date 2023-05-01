@@ -53,6 +53,6 @@ const SecondPage = () => (
   </Layout>
 );
 
-export const Head = () => <Seo title="Page two" />;
+export const Head = () => <Seo title="Contact" />;
 
 export default SecondPage;
