@@ -48,7 +48,7 @@ const IndexPage = () => (
                 <span className={"logo title"}>
                     Bob Chen
                 </span>
-          <h1>
+          <h1 className={"subtitle"}>
             <b>Sydney based student-dev</b> <br />
             <b>with a broad tech and legal interest</b>
           </h1>
@@ -91,7 +91,7 @@ const IndexPage = () => (
               I hope you find my portfolio interesting!
             </h1>
           </div>
-          <div className={styles.table}>
+          <div className={`${styles.table} table-row`}>
             <div style={{
               display: "flex",
               flexDirection: "row",
@@ -130,7 +130,7 @@ const IndexPage = () => (
               View
             </a>
           </div>
-          <div className={styles.table}>
+          <div className={`${styles.table} table-row`}>
             <div style={{
               display: "flex",
               flexDirection: "row",
