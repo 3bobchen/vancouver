@@ -109,7 +109,7 @@ const IndexPage = () => (
                   d="M14.25 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0016.5 7.5h-1.875a.375.375 0 01-.375-.375V5.25z" />
               </svg>
               <span  className={"logo title"} style={{fontSize: "2rem"}}>
-                Interactive CV
+                Digital CV
               </span>
             </div>
             <a

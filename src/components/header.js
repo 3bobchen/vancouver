@@ -53,7 +53,7 @@ const Header = () => (
       <a
         href={"https://drive.google.com/file/d/1JPyq08w1Vg3hKOk65-fWvQqx20Pwu-gx/view?usp=sharing"}
         style={{
-          fontSize: `var(--font-lg)`,
+          fontSize: `var(--font-md)`,
           textDecoration: `none`,
           border: "solid",
           borderColor: "#004ca3",
@@ -68,7 +68,7 @@ const Header = () => (
       <a
         href={"/contact"}
         style={{
-          fontSize: `var(--font-lg)`,
+          fontSize: `var(--font-md)`,
           textDecoration: `none`,
           backgroundColor: "#004ca3",
           color: "#eff1fd",
