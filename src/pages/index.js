@@ -50,7 +50,7 @@ const IndexPage = () => (
                 </span>
           <h1 className={"subtitle"}>
             <b>Sydney based student-dev</b> <br />
-            <b>with a broad tech and legal interest</b>
+            <b>with a broad tech and law interest</b>
           </h1>
         </div>
         <div className={styles.pad} style={{
@@ -114,6 +114,41 @@ const IndexPage = () => (
             </div>
             <a
               href={"/interactive-cv"}
+              style={{
+                fontSize: `var(--font-lg)`,
+                textDecoration: `none`,
+                border: "solid",
+                borderColor: "#004ca3",
+                color: "#004ca3",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: 'center',
+                borderRadius: "10px",
+                flex: 1
+              }}
+            >
+              View
+            </a>
+          </div>
+          <div className={`${styles.table} table-row`}>
+            <div style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "flex-start",
+              gap: "2rem",
+              flex: 4,
+              alignItems: "center"
+            }}>
+              <svg style={{ width: "3rem" }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#004ca3" className="w-6 h-6">
+                <path
+                  d="M16.881 4.346A23.112 23.112 0 018.25 6H7.5a5.25 5.25 0 00-.88 10.427 21.593 21.593 0 001.378 3.94c.464 1.004 1.674 1.32 2.582.796l.657-.379c.88-.508 1.165-1.592.772-2.468a17.116 17.116 0 01-.628-1.607c1.918.258 3.76.75 5.5 1.446A21.727 21.727 0 0018 11.25c0-2.413-.393-4.735-1.119-6.904zM18.26 3.74a23.22 23.22 0 011.24 7.51 23.22 23.22 0 01-1.24 7.51c-.055.161-.111.322-.17.482a.75.75 0 101.409.516 24.555 24.555 0 001.415-6.43 2.992 2.992 0 00.836-2.078c0-.806-.319-1.54-.836-2.078a24.65 24.65 0 00-1.415-6.43.75.75 0 10-1.409.516c.059.16.116.321.17.483z" />
+              </svg>
+              <span className={"logo title"} style={{fontSize: "2rem"}}>
+                Features
+              </span>
+            </div>
+            <a
+              href={"/features"}
               style={{
                 fontSize: `var(--font-lg)`,
                 textDecoration: `none`,

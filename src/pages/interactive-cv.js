@@ -6,7 +6,7 @@ import * as styles from "../styles/index.module.css";
 
 const SecondPage = () => (
   <Layout>
-    <h1 style={{ textAlign: "center", margin: "6vh 0", fontSize: "4rem" }}>Interactive CV</h1>
+    <h1 style={{ textAlign: "center", margin: "6vh 0", fontSize: "4rem" }}>Digital CV</h1>
     <div style={{ display: "flex", flexDirection: "column", gap: "10vh", marginBottom: "10vh" }}>
       <div className={styles.child}>
         <Actions></Actions>
