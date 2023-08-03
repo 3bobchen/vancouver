@@ -4,9 +4,13 @@ import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import * as styles from "../styles/index.module.css";
+import Video from "../images/flash.mp4"
 
 const IndexPage = () => (
   <Layout>
+    <video autoPlay loop muted style={{width: "100vw", paddingBottom: "10rem", objectFit: "cover"}}>
+      <source src={Video}/>
+    </video>
     <Seo title="Home" />
     <div className={styles.container} style={{ display: "flex", flexDirection: "column" }}>
       <div className={`${styles.hero} ${styles.child}`} style={{ display: "flex", width: "100%" }}>

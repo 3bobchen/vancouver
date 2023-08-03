@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
       <Header />
       <div
         style={{
-          margin: `0 auto`, padding: `var(--size-gutter)`
+          margin: `0 auto`
         }}
       >
         <main style={{ minHeight: "70vh" }}>{children}</main>
