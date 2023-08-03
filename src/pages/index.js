@@ -8,7 +8,7 @@ import Video from "../images/flash.mp4"
 
 const IndexPage = () => (
   <Layout>
-    <video autoPlay loop muted style={{width: "100vw", paddingBottom: "10rem", objectFit: "cover"}}>
+    <video autoPlay loop muted playsInline style={{width: "100vw", paddingBottom: "10rem", objectFit: "cover"}}>
       <source src={Video}/>
     </video>
     <Seo title="Home" />
