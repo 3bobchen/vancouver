@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "dependencies": {
+    "@nadfri/react-scroll-progress-bar": "^0.2.3",
     "bootstrap-icons": "^1.9.1",
     "gatsby": "^5.12.12",
     "gatsby-plugin-gatsby-cloud": "^4.19.0",
