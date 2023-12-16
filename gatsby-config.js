@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://bobchen.dev`
   },
   plugins: [
+    'gatsby-plugin-postcss',
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
