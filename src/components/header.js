@@ -12,6 +12,8 @@ const Header = () => (
           href={"https://drive.google.com/file/d/1JPyq08w1Vg3hKOk65-fWvQqx20Pwu-gx/view?usp=sharing"}>PDF Resume</a>
         </li>
         <li className="mb-0"><a
+          href={"/interactive-cv"}>Interactive CV</a>
+        </li><li className="mb-0"><a
           href={"/contact"}>Contact</a>
         </li>
       </ul>
