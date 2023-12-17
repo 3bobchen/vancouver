@@ -9,6 +9,10 @@ import Emoji from "../images/emoji-sunglasses.webp";
 import Jade from "../images/JADE Full.svg";
 import Devsoc from "../images/Full v5 Invert.svg";
 import { ProgressBar } from "@nadfri/react-scroll-progress-bar";
+import BubbleUI from "react-bubble-ui";
+import Child from "../components/Child";
+import { data } from "../components/data";
+import "react-bubble-ui/dist/index.css";
 
 const IndexPage = () => {
   const [index, setIndex] = useState(0);
@@ -21,6 +25,76 @@ const IndexPage = () => {
     return () => clearTimeout(intervalId);
   }, []);
   const texts = ["Critical Thinker", "Considered Advocate", "Logical Reactor", "Decision Maker", "Optimistic Innovator", "Skilled Administrator", "Resourceful Leader", "Curious Observer"];
+
+  const [bubble, setBubble] = useState("");
+  const options = {
+    size: 210,
+    minSize: 60,
+    gutter: 8,
+    provideProps: true,
+    numCols: 6,
+    fringeWidth: 160,
+    yRadius: 130,
+    xRadius: 220,
+    cornerRadius: 50,
+    showGuides: false,
+    compact: true,
+    gravitation: 5
+  };
+
+  React.useEffect(() => {
+    const bubbles = document.querySelector("._2MD0k");
+    const img = document.querySelectorAll(".childComponent");
+    img.forEach(
+      (i) =>
+        (i.ondragstart = () => {
+          return false;
+        })
+    );
+    const dragspeed = 2;
+    let isDown = false;
+    let startX;
+    let startY;
+    let scrollLeft;
+    let scrollTop;
+
+    bubbles.addEventListener("mousedown", (e) => {
+      isDown = true;
+      bubbles.classList.add("active");
+      startX = e.pageX - bubbles.offsetLeft;
+      startY = e.pageY - bubbles.offsetTop;
+      scrollLeft = bubbles.scrollLeft;
+      scrollTop = bubbles.scrollTop;
+    });
+    bubbles.addEventListener("mouseleave", () => {
+      isDown = false;
+      bubbles.classList.remove("active");
+    });
+    bubbles.addEventListener("mouseup", () => {
+      isDown = false;
+      bubbles.classList.remove("active");
+    });
+    bubbles.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - bubbles.offsetLeft;
+      const y = e.pageY - bubbles.offsetTop;
+      const walk = (x - startX) * dragspeed;
+      const topwalk = (y - startY) * dragspeed;
+      bubbles.scrollLeft = scrollLeft - walk;
+      bubbles.scrollTop = scrollTop - topwalk;
+    });
+  });
+
+  const handleClick = (bub) => {
+    setBubble(bub);
+  };
+
+  const children = data?.map((data, i) => {
+    return (
+      <Child data={data} className="child" key={i} setClick={handleClick} />
+    );
+  });
 
   return (
     <Layout>
@@ -43,12 +117,12 @@ const IndexPage = () => {
             <p>Keep reading to learn more about me and my experiences</p>
             <ul className="menu bg-white w-56 rounded-box drop-shadow-md m-0">
               <li>
-                <h2 className="menu-title">Home</h2>
+                <h2 className="menu-title">On this page</h2>
                 <ul>
-                  <li><a>Education</a></li>
-                  <li><a>Work Overview</a></li>
-                  <li><a>Skills</a></li>
-                  <li><a>Timeline</a></li>
+                  <li><a href="#education">Education</a></li>
+                  <li><a href="#work">Work Overview</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#timeline">Timeline</a></li>
                 </ul>
               </li>
             </ul>
@@ -56,7 +130,7 @@ const IndexPage = () => {
         </div>
       </div>
 
-      <div style={{ width: "100%", backgroundColor: "#FFF" }}>
+      <div style={{ width: "100%" }} id="education">
         <h2 className={styles.rainbow} style={{
           fontWeight: 900,
           fontSize: "2.5rem",
@@ -70,39 +144,51 @@ const IndexPage = () => {
       </div>
       <div className="join join-vertical lg:join-horizontal lg:justify-evenly align-middle w-[100%] py-16">
         <div className="card w-80 glass">
-          <figure><img className="h-44 pt-10" src="https://upload.wikimedia.org/wikipedia/en/9/9f/Baulkham_Hills_High_School_logo.png" alt="car!"/></figure>
+          <figure><img className="h-44 pt-10"
+                       src="https://upload.wikimedia.org/wikipedia/en/9/9f/Baulkham_Hills_High_School_logo.png"
+                       alt="car!" /></figure>
           <div className="card-body">
             <h2 className="card-title">Baulkham Hills High School</h2>
             <p>HSC</p>
             <div className="card-actions justify-center">
-              <div className="radial-progress bg-[#004ca3] text-primary-content border-4 border-[#004ca3] text-xs" style={{"--value":100}} role="progressbar">Complete</div>
+              <div className="radial-progress bg-[#004ca3] text-primary-content border-4 border-[#004ca3] text-xs"
+                   style={{ "--value": 100 }} role="progressbar">Complete
+              </div>
             </div>
           </div>
         </div>
         <div className="card w-80 glass">
-          <figure><img className="h-44 pt-10" src="https://images.credly.com/images/0a6743b4-cec3-469a-bd76-8ca923841b7d/blob.png" alt="car!"/></figure>
+          <figure><img className="h-44 pt-10"
+                       src="https://images.credly.com/images/0a6743b4-cec3-469a-bd76-8ca923841b7d/blob.png"
+                       alt="car!" /></figure>
           <div className="card-body">
             <h2 className="card-title">University of New South Wales</h2>
             <p>Bachelor of Science (Computer Science)</p>
             <div className="card-actions justify-center">
-              <div className="radial-progress bg-[#004ca3] text-primary-content border-4 border-[#004ca3] text-xs" style={{"--value":100}} role="progressbar">Complete</div>
+              <div className="radial-progress bg-[#004ca3] text-primary-content border-4 border-[#004ca3] text-xs"
+                   style={{ "--value": 100 }} role="progressbar">Complete
+              </div>
             </div>
           </div>
         </div>
         <div className="card w-80 glass">
-          <figure><img className="h-44 pt-10" src="https://images.credly.com/images/0a6743b4-cec3-469a-bd76-8ca923841b7d/blob.png" alt="car!"/></figure>
+          <figure><img className="h-44 pt-10"
+                       src="https://images.credly.com/images/0a6743b4-cec3-469a-bd76-8ca923841b7d/blob.png"
+                       alt="car!" /></figure>
           <div className="card-body">
             <h2 className="card-title">University of New South Wales</h2>
             <p>Bachelor of Laws</p>
             <div className="card-actions justify-center">
-              <div className="radial-progress bg-[#004ca3] text-primary-content border-4 border-[#004ca3]" style={{"--value":42}} role="progressbar">42%</div>
+              <div className="radial-progress bg-[#004ca3] text-primary-content border-4 border-[#004ca3]"
+                   style={{ "--value": 42 }} role="progressbar">42%
+              </div>
             </div>
           </div>
         </div>
       </div>
 
 
-      <div style={{ width: "100%", backgroundColor: "#FFF" }}>
+      <div style={{ width: "100%" }} id="work">
         <h2 className={styles.rainbow} style={{
           fontWeight: 900,
           fontSize: "2.5rem",
@@ -121,41 +207,51 @@ const IndexPage = () => {
           </h2>
           <div
             className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-            <img
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://upload.wikimedia.org/wikipedia/en/0/04/Macquarie_Group_logo.svg"
-              alt="Macquarie"
-              width={158}
-              height={48}
-            />
-            <img
-              className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
-              src={Jade}
-              alt="Jade.io"
-              width={158}
-              height={48}
-            />
-            <img
-              className="col-span-2 max-h-8 w-full object-contain lg:col-span-1"
-              src="https://www.bankingday.com/uploads/2022/Q3/Volt-logo-August2022.png"
-              alt="Tuple"
-              width={158}
-              height={48}
-            />
-            <img
-              className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-              src="https://unswfintech.com/wp-content/uploads/2022/05/red-horizontal-logo.svg"
-              alt="SavvyCal"
-              width={158}
-              height={48}
-            />
-            <img
-              className="col-span-2 col-start-2 max-h-10 w-full object-contain sm:col-start-auto lg:col-span-1"
-              src={Devsoc}
-              alt="DevSoc"
-              width={158}
-              height={48}
-            />
+            <div className="tooltip" data-tip="Tech Intern (Dec 2023 -)">
+              <img
+                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                src="https://upload.wikimedia.org/wikipedia/en/0/04/Macquarie_Group_logo.svg"
+                alt="Macquarie"
+                width={158}
+                height={48}
+              />
+            </div>
+            <div className="tooltip" data-tip="Software Engineer (May 2021 - Nov 2023)">
+              <img
+                className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
+                src={Jade}
+                alt="Jade.io"
+                width={158}
+                height={48}
+              />
+            </div>
+            <div className="tooltip" data-tip="Operations Intern (Feb 2022 - Jul 2022)">
+              <img
+                className="col-span-2 max-h-8 w-full object-contain lg:col-span-1"
+                src="https://www.bankingday.com/uploads/2022/Q3/Volt-logo-August2022.png"
+                alt="Tuple"
+                width={158}
+                height={48}
+              />
+            </div>
+            <div className="tooltip" data-tip="Co-President (Oct 2022 - Oct 2023)">
+              <img
+                className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+                src="https://unswfintech.com/wp-content/uploads/2022/05/red-horizontal-logo.svg"
+                alt="SavvyCal"
+                width={158}
+                height={48}
+              />
+            </div>
+            <div className="tooltip" data-tip="Co-President (Oct 2023 -)">
+              <img
+                className="col-span-2 col-start-2 max-h-10 w-full object-contain sm:col-start-auto lg:col-span-1"
+                src={Devsoc}
+                alt="DevSoc"
+                width={158}
+                height={48}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -167,34 +263,42 @@ const IndexPage = () => {
           </h2>
           <div
             className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-            <img
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Accenture_logo.svg/2560px-Accenture_logo.svg.png"
-              alt="Macquarie"
-              width={158}
-              height={48}
-            />
-            <img
-              className="col-span-2 max-h-9 w-full object-contain lg:col-span-1"
-              src="https://seeklogo.com/images/S/sig-susquehanna-logo-9D23400D03-seeklogo.com.png"
-              alt="Jade.io"
-              width={158}
-              height={48}
-            />
-            <img
-              className="col-span-2 max-h-24 w-full object-contain lg:col-span-1"
-              src="https://nswbar.asn.au/uploads/general-images/2._NSW_Bar_Association_vertical_lockup_.png"
-              alt="Tuple"
-              width={158}
-              height={48}
-            />
-            <img
-              className="col-span-2 max-h-32 w-full object-contain sm:col-start-2 lg:col-span-1"
-              src="https://images.credly.com/size/340x340/images/f528fb62-e430-4af3-95ba-910209e198c2/image.png"
-              alt="SavvyCal"
-              width={158}
-              height={48}
-            />
+            <div className="tooltip" data-tip="Tech Bootcamp - 2nd Place (Feb 2023)">
+              <img
+                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Accenture_logo.svg/2560px-Accenture_logo.svg.png"
+                alt="Accenture"
+                width={158}
+                height={48}
+              />
+            </div>
+            <div className="tooltip" data-tip="Algothon Trading Challenge - Judge (Sep 2023)">
+              <img
+                className="col-span-2 max-h-9 w-full object-contain lg:col-span-1"
+                src="https://seeklogo.com/images/S/sig-susquehanna-logo-9D23400D03-seeklogo.com.png"
+                alt="Jade.io"
+                width={158}
+                height={48}
+              />
+            </div>
+            <div className="tooltip" data-tip="Future Essay Challenge - 1st Place (Dec 2022)">
+              <img
+                className="col-span-2 max-h-24 w-full object-contain lg:col-span-1"
+                src="https://nswbar.asn.au/uploads/general-images/2._NSW_Bar_Association_vertical_lockup_.png"
+                alt="Tuple"
+                width={158}
+                height={48}
+              />
+            </div>
+            <div className="tooltip" data-tip="Arc Executive Training - President (Dec 2022)">
+              <img
+                className="col-span-2 max-h-32 w-full object-contain sm:col-start-2 lg:col-span-1"
+                src="https://images.credly.com/size/340x340/images/f528fb62-e430-4af3-95ba-910209e198c2/image.png"
+                alt="SavvyCal"
+                width={158}
+                height={48}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -206,32 +310,38 @@ const IndexPage = () => {
           </h2>
           <div
             className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-            <img
-              className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
-              src="https://careers.lawsociety.com.au/wp-content/themes/law-society/images/logo.png"
-              alt="Macquarie"
-              width={158}
-              height={48}
-            />
-            <img
-              className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
-              src="https://ntdigitalawards.org.au/sites/default/files/sponsor/logo/2023/ACS-Logo_ForWhiteBackground_NoSpacing-SpecialUse-RGB%20%281%29.png"
-              alt="Jade.io"
-              width={158}
-              height={48}
-            />
-            <img
-              className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Association_for_Computing_Machinery_%28ACM%29_logo.svg/2048px-Association_for_Computing_Machinery_%28ACM%29_logo.svg.png"
-              alt="Tuple"
-              width={158}
-              height={48}
-            />
+            <div className="tooltip" data-tip="Associate Member">
+              <img
+                className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
+                src="https://careers.lawsociety.com.au/wp-content/themes/law-society/images/logo.png"
+                alt="Macquarie"
+                width={158}
+                height={48}
+              />
+            </div>
+            <div className="tooltip" data-tip="Associate Member">
+              <img
+                className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
+                src="https://ntdigitalawards.org.au/sites/default/files/sponsor/logo/2023/ACS-Logo_ForWhiteBackground_NoSpacing-SpecialUse-RGB%20%281%29.png"
+                alt="Jade.io"
+                width={158}
+                height={48}
+              />
+            </div>
+            <div className="tooltip" data-tip="Student Member">
+              <img
+                className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Association_for_Computing_Machinery_%28ACM%29_logo.svg/2048px-Association_for_Computing_Machinery_%28ACM%29_logo.svg.png"
+                alt="Tuple"
+                width={158}
+                height={48}
+              />
+            </div>
           </div>
         </div>
       </div>
 
-      <div style={{ width: "100%", backgroundColor: "#FFF" }}>
+      <div style={{ width: "100%" }} id="skills">
         <h2 className={styles.rainbow} style={{
           fontWeight: 900,
           fontSize: "2.5rem",
@@ -243,9 +353,12 @@ const IndexPage = () => {
           color: "#004ca3"
         }}>Skills</h2>
       </div>
+      <BubbleUI key={1} options={options} className="myBubbleUI h-[30rem]">
+        {children}
+      </BubbleUI>
 
 
-      <div style={{ width: "100%", backgroundColor: "#FFF" }}>
+      <div style={{ width: "100%" }} id="timeline">
         <h2 className={styles.rainbow} style={{
           fontWeight: 900,
           fontSize: "2.5rem",
