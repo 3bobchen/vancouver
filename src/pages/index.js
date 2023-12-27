@@ -108,8 +108,8 @@ const IndexPage = () => {
       <div className="hero min-h-[80vh] mb-20">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img src={Headshot}
-               className="max-w-sm rounded-lg shadow-2xl" />
-          <div className="min-w-[500px] w-[50vw]">
+               className=" w-3/4 max-w-sm rounded-lg shadow-2xl" />
+          <div className="w-[50vw]">
             <p className={styles.handwriting}>Hi there, my name is <b>Bob</b> <img
               style={{ display: "inline", height: "2.5rem" }} src={Emoji} /> and I am a: </p>
             <TextTransition className={styles.rainbow}
