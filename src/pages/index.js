@@ -142,8 +142,8 @@ const IndexPage = () => {
           color: "#004ca3"
         }}>Education</h2>
       </div>
-      <div className="join join-vertical lg:join-horizontal lg:justify-evenly align-middle w-[100%] py-16">
-        <div className="card w-80 glass bg-white">
+      <div className="md:join md:join-vertical lg:join-horizontal justify-evenly align-middle w-full py-16">
+        <div className="card w-80 glass bg-white sm:m-auto md:m-0">
           <figure><img className="h-44 pt-10"
                        src="https://upload.wikimedia.org/wikipedia/en/9/9f/Baulkham_Hills_High_School_logo.png"
                        alt="car!" /></figure>
@@ -157,7 +157,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-        <div className="card w-80 glass bg-white">
+        <div className="card w-80 glass bg-white sm:m-auto md:m-0">
           <figure><img className="h-44 pt-10"
                        src="https://images.credly.com/images/0a6743b4-cec3-469a-bd76-8ca923841b7d/blob.png"
                        alt="car!" /></figure>
@@ -171,7 +171,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-        <div className="card w-80 glass bg-white">
+        <div className="card w-80 glass bg-white sm:m-auto md:m-0">
           <figure><img className="h-44 pt-10"
                        src="https://images.credly.com/images/0a6743b4-cec3-469a-bd76-8ca923841b7d/blob.png"
                        alt="car!" /></figure>
@@ -370,7 +370,7 @@ const IndexPage = () => {
           color: "#004ca3"
         }}>Timeline</h2>
       </div>
-      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical max-w-[1200px] mx-auto my-6">
+      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical max-w-[1200px] mx-auto my-6 sm:px-10">
         <li>
           <div className="timeline-middle">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5">
